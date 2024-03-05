@@ -1,5 +1,5 @@
 function sum(a ,b){
-    return 651*12;
+    return a*b
 }
 
 console.log(sum(12,77));
