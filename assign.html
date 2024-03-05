@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login form</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="assign.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; margin-top: 20px;margin-bottom: 20px;">SignUp Login</h1>
+    <div class="row">
+
+      <div class="col-sm-6">
+        <img src="login.jpg" alt="" style="width: 100%;height: 100%;border-radius: 5px;">
+      </div>
+      <div class="col-sm-6">
+        <h1 id="Success"> </h1>
+
+        <div class="card"style="height:100%;">
+          <div class="card-body">
+            <h4 style="padding-bottom: 15px;" id="commonErrors"></h4>
+            <form action="#" id="signUpForm" method="get">
+
+          <div class="row">
+            <div class="col-sm-6"> 
+            <label for="firstName">FirstName</label>
+            <input type="text" name="Fname" id="Fname" onkeyup="fnameValide()" class="form-control">
+            <span id="helper1" style="color: red; font-size: 13px;"></span>
+          </div>
+          
+          <div class="col-sm-6">
+            <label for="lastName">lastName</label>
+            <input type="text" name="Lname" id="Lname" onkeyup="lnamevalide()" class="form-control">
+            <span id="helper2" style="color: red; font-size: 13px;"></span>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="Password">Password</label>
+              <input type="password" name="password" onkeyup="passvalide()" id="password" class="form-control">
+              <span id="helper3" style="color: red; font-size: 13px;"></span>
+            </div>
+            
+            <div class="col-sm-6">
+              <label for="confirm">Confirm password</label>
+              <input type="password" onkeyup="confirmvalid()" name="confirm" id="confirm" class="form-control">
+              <span id="helper4" style="color: red;font-size: 13px;"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col"> 
+            <label for="Email">Email</label>
+            <input type="email" onkeyup="emailvalid()" name="email" id="email" class="form-control">
+            <span id="helper5" style="color: red; font-size: 13px;"></span>
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="phone">Phone</label>
+              <input type="tell" onkeyup="phonevalid()" name="tell" id="tell" class="form-control">
+              <span id="helper6" style="color: red; font-size: 13px;"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6" style="width: 100%;">
+              <button type="reset" style="width:100%;margin-top:10px;" class="btn btn-danger" onclick="Refresh()">cancel</button>
+            </div>
+            <div class="col-sm-6">
+              <button type="submit" id="submit" onclick="return submitvalide()" style="width:100%;margin-top:10px;" class="btn btn-success">Save</button>
+              <span id="helper7" style="color: red;font-size: 13px;"></span>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col">
+              <div id="par">
+                <p id="par1"></p>
+              </div>
+            </div>
+            
+          </div>
+            </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row"> 
+    <div> 
+      <h1 id="mod">Waano iyo wacdi</h1>
+      
+      <p class="sum">Wali iyo rasuul iyo haddaan waxar ladhaafeynin ,  <br>
+          Allah mooyee haddii cidiba waareyne, <br>
+          waysada haddeynina tan waa layska wadayaaye. <br>
+      </p>
+      <p class="sum">Bini'aadanow waxaad maagan tahay <br> adi iyo maankaagu iyo meel <br> Illahay kumarin kamid weeyaan</p>
+        <br> 
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1">
+      <button id="last"  class="btn btn-success" onclick="change2()">shaddow</button>
+
+    </div>
+    <div class="col-sm-1">
+      <button class="first btn btn-info" onclick="change1()">colorback</button>
+    </div>
+    <div class="col-sm-1">
+      <button class="first btn btn-danger" onclick="Change()">modifying </button>
+    </div>
+  </div>
+</div>
+  <script src="assign.js"></script>
+</body>
+</html>

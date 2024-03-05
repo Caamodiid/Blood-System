@@ -1,0 +1,9 @@
+
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
+nav >ul ,li a{
+    float: right;
+}
